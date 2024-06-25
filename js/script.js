@@ -29,5 +29,16 @@ createApp( {
                     }
                 ],
         }
+    },
+    methods: {
+        nextImage(){
+            //logica funzionamento al click next
+            this.activeItem++;
+            //gestione loop
+            if (this.activeItem > this.slides.length - 1) {
+                //indice a 0
+                this.activeItem = 0;
+            }
+        },
     }
 }).mount('#app')  
