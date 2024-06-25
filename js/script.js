@@ -40,5 +40,14 @@ createApp( {
                 this.activeItem = 0;
             }
         },
+        prevImage(){
+            //logica funzionamento al click prev
+            this.activeItem--;
+            //gestione loop
+            if (this.activeItem < 0) {
+                //indice a 0
+                this.activeItem = this.slides.length - 1;
+            }
+        }
     }
 }).mount('#app')  

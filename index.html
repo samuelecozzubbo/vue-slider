@@ -29,10 +29,10 @@
                 </div>
 
                 <div class="thumbs">
-                    <div class="prev"></div>
+                    <div class="prev" @click="prevImage"></div>
                     <div class="next" @click="nextImage"></div>
                     <div class="thumb" v-for="(thumb, i) in slides" :key="i">
-                        <img class="thumb"  :src="thumb.image" :alt="thumb.title" />
+                        <img class="thumb" :src="thumb.image" :alt="thumb.title" />
                     </div>
                 </div>
 
