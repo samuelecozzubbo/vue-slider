@@ -48,6 +48,10 @@ createApp( {
                 //indice a 0
                 this.activeItem = this.slides.length - 1;
             }
+        },
+        clickImage(i){
+            //logica funzione click thumbnail
+            this.activeItem = i;
         }
     }
 }).mount('#app')  
