@@ -34,8 +34,8 @@
                 <div class="thumbs">
                     <div class="prev"></div>
                     <div class="next"></div>
-                    <div class="thumb">
-                        <img v-for="(thumb, i) in slides" :key="i" :src="thumb.image" alt="thumb"/>
+                    <div class="thumb" v-for="(thumb, i) in slides" :key="i">
+                        <img class="thumb"  :src="thumb.image" :alt="thumb.title" />
                     </div>
                 </div>
 
